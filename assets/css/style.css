@@ -178,7 +178,7 @@ a {
   .header__menu[show=yes] ul {
     display: flex;
     flex-direction: column;
-    background-color: #fff;
+    background-color: #FDFDFD;
     position: absolute;
     top: 0;
     left: 0;
@@ -606,7 +606,6 @@ a {
   }
   .section3__button {
     margin-bottom: 30px;
-    z-index: 1;
   }
 }
 @media (max-width: 767.98px) {

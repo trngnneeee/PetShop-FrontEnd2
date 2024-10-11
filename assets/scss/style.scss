@@ -189,7 +189,7 @@ a{
             & ul{
                 display: flex;
                 flex-direction: column;
-                background-color: #fff;
+                background-color: $color-bg;
                 position: absolute;
                 top: 0;
                 left: 0;
@@ -722,7 +722,7 @@ a{
 
         &__button{
             margin-bottom: 30px;
-            z-index: 1;
+            // z-index: 1;
         }
     }
 
