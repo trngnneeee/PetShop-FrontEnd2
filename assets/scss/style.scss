@@ -17,7 +17,7 @@ body{
     background-color: $color-main;
     padding: 0 28px;
     border-radius: 57px;
-    
+
     color: white;
     font-size: 16px;
     font-weight: 700;
@@ -177,6 +177,39 @@ a{
             display: none;
         }
 
+        &__menu[show = "yes"]{
+            display: block;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 99;
+
+            & ul{
+                display: flex;
+                flex-direction: column;
+                background-color: #fff;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 130px;
+                height: 100%;
+                z-index: 1;
+                padding-top: 20px;
+            }
+        }
+
+        &__menu[show = "yes"] .header__overlay{
+            background-color: #0000004f;
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+        }
     
         &__menu-mobile{
             display: inline-block;
@@ -240,7 +273,7 @@ a{
         color: #002A48;
         font-weight: 700;
         position: relative;
-        z-index: 1;
+        // z-index: 1;
     }
 
     &__title--main{
@@ -389,7 +422,7 @@ a{
     
         &__image{
             & img{
-                z-index: 1;
+                // z-index: 1;
             }
         }
     
@@ -416,18 +449,16 @@ a{
     color: $color-text-dark;
     margin-bottom: 28px;
 
-    &__left{
-        &--sub-title{
-            font-size: 16px;
-            font-weight: 500;
-            margin-bottom: 2px; 
-        }
-    
-        &--title{
-            font-size: 24px;
-            font-weight: 700;
-            margin: 0;
-        }
+    &__sub-title{
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 2px; 
+    }
+
+    &__title{
+        font-size: 24px;
+        font-weight: 700;
+        margin: 0;
     }
 
     @media (max-width: 767.98px){
@@ -1055,6 +1086,13 @@ a{
         &__mid{
             flex-wrap: wrap;
             justify-content: center;
+            &__menu{
+                & ul{
+                    & li{
+                        font-size: 15p;
+                    }
+                }
+            }
         }
     }
 }

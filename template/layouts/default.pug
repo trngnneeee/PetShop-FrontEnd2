@@ -7,6 +7,7 @@ html
         link(rel="stylesheet" href="assets/css/style.css")
         link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer")
     body 
+
         div.header 
             div.container 
                 div.header__wrap
@@ -16,16 +17,18 @@ html
                     .header__menu-mobile 
                         i(class="fa-solid fa-bars")
                     
-                    nav.header__menu 
+                    nav.header__menu
                         ul 
                             li  
                                 a(href = "index.html") Trang Chủ
                             li 
-                                a(href = "../../product-list.html") Danh Mục
+                                a(href = "/ProjectList/Project2/product-list.html") Danh Mục
                             li 
                                 a(href = "#") Giới Thiệu
                             li 
                                 a(href = "#") Liên Hệ
+                        .header__overlay 
+
                     button.header__search-mobile 
                         i(class="fa-solid fa-magnifying-glass")
                     form(action = "#" class = "header__form")
@@ -80,6 +83,6 @@ html
                                 a(href = "#") Điều khoản
                             li 
                                 a(href = "#") Chính sách bảo mật
-
+        script(src = "./assets/js/scripts.js")
                 
                                 
